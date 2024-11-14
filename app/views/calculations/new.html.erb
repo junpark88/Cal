@@ -1,0 +1,22 @@
+<h1>Multiplication Form</h1>
+<%= form_tag calculations_path, method: :post do %>
+  <div>
+    <%= label_tag :a, "Sca:" %>
+    <%= text_field_tag :a %>
+  </div>
+  <div>
+    <%= label_tag :b, "Scr:" %>
+    <%= text_field_tag :b %>
+  </div>
+  <div>
+    <%= label_tag :c, "Uca:" %>
+    <%= text_field_tag :c %>
+  </div>
+  <div>
+    <%= label_tag :d, "Ucr:" %>
+    <%= text_field_tag :d %>
+  </div>
+  <div>
+    <%= submit_tag "Calculate"%>
+  </div>
+<% end %>
